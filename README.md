@@ -21,8 +21,8 @@ for(p in pkgs){
 To execute the analysis, from the project folder you can run
 
 ```{r}
-Rscript -e "rmarkdown::render('Nanxi_Guo_INFO550_HW3.Rmd')"
+Rscript -e "rmarkdown::render('Nanxi\ Guo_INFO550_HW3.Rmd')"
 ```
-This will create a file called Nanxi_Guo_INFO550_HW3.html output in your directory that contains the results.
+This will create a file called Nanxi Guo_INFO550_HW3.html output in your directory that contains the results.
 
 

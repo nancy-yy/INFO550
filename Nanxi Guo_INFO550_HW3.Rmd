@@ -95,7 +95,7 @@ p3 + geom_histogram(mapping = aes(y = ..density..),alpha = .6)+
 
 Overall, the number of expressed genes is concentrated in around 1250.
 ```{r}
-devtools::session_info()
+# devtools::session_info()
 
 ```
 

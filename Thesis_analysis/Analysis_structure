@@ -1,0 +1,16 @@
+Thesis_analysis/
+    raw_data/
+    clean_data/
+    R/
+      R/00_install.R
+      R/01_clean_data.R
+      R/02_make_hist.R
+      R/03_make_density.R
+      R/04_make_hist.den.R
+      R/06_Nanxi_Guo_INFO550.Rmd
+    figs/
+    Nanxi_Guo_INFO550.html
+    Makefile
+    README.md
+
+

@@ -10,7 +10,7 @@ To analyze the data, you will need to install some R packages. The required pack
 installed_pkgs <- row.names(installed.packages())
 pkgs <- c("kableExtra", "ggplot2")
 for(p in pkgs){
-	if(!(p %in% install_pkgs)){
+	if(!(p %in% installed_pkgs)){
 		install.packages(p)
 	}
 }
@@ -18,11 +18,23 @@ for(p in pkgs){
 
 ## Execute the analysis
 
-To execute the analysis, from the project folder you can run
+To execute the analysis, please download the Thesis_analysis folder. From that folder, please type commands as following in your terminal.
 
 ```{r}
-Rscript -e "rmarkdown::render('Nanxi\ Guo_INFO550_HW3.Rmd')"
+make help
 ```
-This will create a file called Nanxi Guo_INFO550_HW3.html output in your directory that contains the results.
+This will give you some help information about the Makefile.
+
+```{r}
+make install
+```
+This will install the required R packages.
+
+```{r}
+make Nanxi_Guo_INFO550.html
+```
+This will produce the report called Nanxi Guo_INFO550.html in your directory of Thesis_analysis folder.
+
+Or, please just type 'make' in your terminal to get my report.
 
 

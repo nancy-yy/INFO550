@@ -1,9 +1,11 @@
-
+# Build the container: proj
+build: 
+	docker build -t proj .
 
 ## Nanxi_Guo_INFO550.html    : Generate final analysis report.
 # using the cleaned data, generate the report
 Nanxi_Guo_INFO550.html: figs/hist.png figs/density.png figs/hist.den.png R/Nanxi_Guo_INFO550.Rmd clean_data/atac_cell_fake_clean.csv
-	cd R && Rscript -e "rmarkdown::render('Nanxi_Guo_INFO550.Rmd', output_file = '../Nanxi_Guo_INFO550.html')"
+	cd R && Rscript -e "rmarkdown::render('Nanxi_Guo_INFO550.Rmd', output_file = '../output/Nanxi_Guo_INFO550.html')"
 
 
 ## install.html              : Install R packages for my analysis. 

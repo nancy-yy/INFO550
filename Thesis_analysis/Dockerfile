@@ -15,5 +15,5 @@ COPY ./ /project/
 # make R scripts executable
 RUN chmod +x /project/R/*.R
 
-# make container entry point bash
+# make container entry point to make report
 CMD make -C project Nanxi_Guo_INFO550.html

@@ -1,6 +1,7 @@
+
 # Build the container: proj
 build: 
-	docker build -t proj .
+	docker build -t nanxiguo/info550_roject .
 
 ## Nanxi_Guo_INFO550.html    : Generate final analysis report.
 # using the cleaned data, generate the report
